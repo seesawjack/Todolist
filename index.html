@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>待辦事項</title>
+
+</head>
+
+<body>
+    <main>
+        <div class="main-container">
+            <div class="todo-card">
+                <div class="card-img">
+                    <div class="img">
+                        <h1>TO DO LIST</h1>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <input type="text" id="myinput" class="txt" placeholder="請輸入代辦事項">
+                    <input type="button" onclick="newElement()" class="addBtn" value="新增">
+                    <input type="button" class="clearBtn" value="刪除全部">
+                    <ul id="myul" class="list">
+                        <li>買報紙</li>
+                        <li class="checked">繳電話費</li>
+                        <li>買樂透</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
