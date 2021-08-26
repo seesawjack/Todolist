@@ -107,9 +107,6 @@ main .main-container .todo-card .card-content .list li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 20px;
   padding: 0px 0px 0px 20px;
   position: relative;
@@ -142,9 +139,20 @@ main .main-container .todo-card .card-content .list li.checked:before {
   left: 0px;
 }
 
-main .main-container .todo-card .card-content .list li .list-content.checked {
-  text-decoration: line-through;
-  color: gray;
+main .main-container .todo-card .card-content .list li span {
+  max-width: 300px;
+  width: 100%;
+}
+
+main .main-container .todo-card .card-content .list li span:focus {
+  border: 2px solid #349ee6;
+  border-radius: 5px;
+}
+
+main .main-container .todo-card .card-content .list li button {
+  border: none;
+  background-color: unset;
+  padding: 0px 5px;
 }
 
 main .main-container .todo-card .card-content .list li i {

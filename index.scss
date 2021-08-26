@@ -84,7 +84,6 @@ main{
                     margin-top: 20px;
                     li{
                         display: flex;
-                        justify-content: space-between;
                         margin-bottom: 20px;
                         padding: 0px 0px 0px 20px;
                         position: relative;
@@ -112,12 +111,19 @@ main{
                                 left: 0px;
                             }
                         }
-                        .list-content{
-                            &.checked{
-                                text-decoration: line-through;
-                                color: gray;
+                        span{
+                            max-width: 300px;
+                            width: 100%;
+                            &:focus{
+                               border: 2px solid rgb(52, 158, 230);
+                               border-radius: 5px;
                             }
-                        } 
+                        }
+                        button{
+                            border: none;
+                            background-color: unset;
+                            padding: 0px 5px;
+                        }
                         i{
                             color: rgb(52, 158, 230);
                             &:hover{
